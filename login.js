@@ -7,41 +7,15 @@ document.getElementById('login-submit').addEventListener('click', function (){
     if(userEmail == 'child@fathergmail.com' && userPassword == 'secret'){
         window.location.href = 'banking.html'
     }
+    else{
+        alert('Invalid credentials. If you want to access this site, use child@fathergmail.com as email and secret as password')
+    }
 })
 
 
 
-// duplicate
-document.getElementById('login-submit').addEventListener('click', function (){
-    // get user email
-    const emailFeild = document.getElementById('user-email')
-    const userEmail = emailFeild.value
-    const userPassword = document.getElementById('user-password').value
-// checking
-    if(userEmail == 'child@fathergmail.com' && userPassword == 'secret'){
-        window.location.href = 'banking.html'
-    }
-})
-document.getElementById('login-submit').addEventListener('click', function (){
-    // get user email
-    const emailFeild = document.getElementById('user-email')
-    const userEmail = emailFeild.value
-    const userPassword = document.getElementById('user-password').value
-// checking
-    if(userEmail == 'child@fathergmail.com' && userPassword == 'secret'){
-        window.location.href = 'banking.html'
-    }
-})
-document.getElementById('login-submit').addEventListener('click', function (){
-    // get user email
-    const emailFeild = document.getElementById('user-email')
-    const userEmail = emailFeild.value
-    const userPassword = document.getElementById('user-password').value
-// checking
-    if(userEmail == 'child@fathergmail.com' && userPassword == 'secret'){
-        window.location.href = 'banking.html'
-    }
-})
+
+
 
 
 

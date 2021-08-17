@@ -1,4 +1,4 @@
-
+ 
 function getInputValue(inputId){
     const inputFeild = document.getElementById(inputId);
     const inputAmountText = inputFeild.value;
@@ -71,7 +71,12 @@ document.getElementById('deposit-btn').addEventListener('click', function(){
     updateTotalField('deposit-total', depositAmount);
     updateBalance(depositAmount, true);  
 }
-
+else if (depositAmount < 0){
+    alert('Please Input Positive Number')
+}
+else (
+    alert ('Please Input number')
+)
 })
 
 // handle withdraw 
@@ -112,9 +117,15 @@ document.getElementById('withdraw-btn').addEventListener('click', function(){
     updateTotalField('withdraw-total', withdrawAmount)
     updateBalance(withdrawAmount, false)
     }
-    if (withdrawAmount > currentBalance)[
-        console.log('You can not withdraw more than what have your current')
-    ]
+    else if(withdrawAmount > currentBalance){
+        alert('You can not withdraw more than what have your current balance')
+    }
+    else if ( withdrawAmount < 0){
+        alert('Please input positive Number')
+    }
+    else if (withdrawAmount != Number){
+        alert ('Please input number')
+    }
 })
 
  
